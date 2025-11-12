@@ -89,3 +89,201 @@ let value = 15;
 value = value + 10;
 // let value = 50;
 console.log(value); // 25
+
+
+// printing statement
+
+// 1. console.log()
+
+let all = 1
+
+console.log(all);
+
+console.log(100);
+
+
+
+// 2. alert()
+
+// alert("hello everyone , good morning")
+
+// 3. confirm()
+
+// confirm("did you know javascript")
+
+
+// 4. prompt()
+
+// prompt("what is your name")
+
+// 5. document.writeln()
+
+// document.writeln("hello")
+
+
+// console method 
+
+// 1. console.log()
+
+console.log(100);
+
+
+// 2. console.warn()
+
+console.warn(100);
+
+
+// 3. console.error()
+
+console.error(100);
+
+
+// 4. console.clear()
+
+console.clear()
+
+
+
+// dataTypes
+
+// primitive data type
+
+// 1. string - ""
+
+let str = "123"
+
+console.log(typeof(str));
+
+
+
+
+// 2. number
+
+let num = 123
+
+console.log(typeof(num));
+
+
+// 3. boolean
+
+let boo = false
+
+console.log(typeof(boo));
+
+
+// 4. undefined
+
+let un;
+
+console.log(un);
+
+
+// 5. null
+
+// let null1 = prompt()
+
+// console.log(null1);
+
+
+// non primitive data type
+
+// array
+
+// []
+
+let fruit = ["graphs","apple","orange","banana","cherry","pine apple"]
+
+console.log(fruit);
+console.log(fruit[0]);
+console.log(fruit[3]);
+
+// dynamically access first val
+
+console.log(fruit[0]);
+
+console.log(fruit[fruit.length-1]);
+
+
+// object
+
+// {}
+
+let obj1 = {
+    redFruit : ["apple","cherry"],
+    yellowFruit : ["banana","pine apple"],
+    smallFruit : "graphs"
+}
+
+console.log(obj1);
+
+console.log(obj1.redFruit[0]);
+console.log(obj1.yellowFruit[1]);
+console.log(obj1.smallFruit);
+
+
+// operators 
+
+// 1. arithmetic operator
+
+// meaning            operator 
+
+// 1. addition            +
+
+// 2. subraction          -
+
+// 3. multiplication      *
+
+// 4. division            / 
+
+// 5. modulus             %
+
+// 6. exponencial        **
+
+// 7. increament         ++,  post = var ++ , pre = ++ var
+
+// 8. decreament         -- , post = var --, pre = -- var.
+
+console.log(1 + 2);
+console.log(1 - 2);
+console.log(1 * 2);
+console.log(1 / 2);
+console.log(1 % 2);
+console.log(1 ** 2); // 1^2 = 1*1 = 1
+
+
+// ++ = 1
+
+let num1 = 2  // 0
+
+num1  = ++num1 // ++num1 = 3
+
+console.log(num1);
+
+
+let num2 = 2     
+
+let num3 = num2++ // 2++ = 3
+
+console.log("num2 :",num2);
+console.log("num3 :",num3);
+
+
+
+
+
+// 2. assignment operator
+
+// 3. comparision operator
+
+// 4. logical operator
+
+
+
+
+
+
+// function
+
+// date
+
+
