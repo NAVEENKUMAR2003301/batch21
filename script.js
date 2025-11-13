@@ -1,289 +1,562 @@
-// // variables 
+// // // variables 
 
-// // var - global scope
+// // // var - global scope
 
-// // let  - block scope
+// // // let  - block scope
 
-// // const - block scope
+// // // const - block scope
 
-// // rules
+// // // rules
 
-// // var
+// // // var
 
-// var a = 10  // declration  // intialiazation
+// // var a = 10  // declration  // intialiazation
 
-// a = 20     // reuse  // reintialiazation
+// // a = 20     // reuse  // reintialiazation
 
-// var a = 22  // redeclation
+// // var a = 22  // redeclation
 
-// console.log(a)
+// // console.log(a)
 
-// // let 
+// // // let 
 
-// let b = 20  // declration // intialiazation
+// // let b = 20  // declration // intialiazation
 
-// b = 25      // reuse      // reIntialiazation
+// // b = 25      // reuse      // reIntialiazation
 
-// // let b = 30  // reDeclration
+// // // let b = 30  // reDeclration
 
-// console.log(b);
+// // console.log(b);
 
-// // const 
+// // // const 
 
-// const c = 30  // declration // intialiazation
+// // const c = 30  // declration // intialiazation
 
-// // c = 40     // not accepted for reuse & reInt
+// // // c = 40     // not accepted for reuse & reInt
 
-// // const c = 56 // not acc redeclration
+// // // const c = 56 // not acc redeclration
 
-// console.log(c);
-
-
-// examples 
+// // console.log(c);
 
 
-// 1
-var x = 5;
-x = 10;
-var x = 15;
-console.log(x);  // 15
+// // examples 
 
-// 2
+
+// // 1
+// var x = 5;
+// x = 10;
+// var x = 15;
+// console.log(x);  // 15
+
+// // 2
+// let y = 8;
+// y = 12;
+// // let y = 20;
+// console.log(y); // 12
+
+// // 3
+// const z = 25;
+// // z = 30;
+// // const z = 40;
+// console.log(z); // 25
+
+// // 4
+// var a = 50;
+// a = a + 20;
+// var a = a + 10;
+// console.log(a); // 80
+
+// // 5
+// let b = 100;
+// b = b - 40;
+// // let b = 200;
+// console.log(b); // 60
+
+// // 6
+// const c = 10;
+// // c = c + 5;
+// // const c = 20;
+// console.log(c); // 10
+
+// // 7
+// var price = 200;
+// price = price * 2;
+// var price = price / 4;
+// console.log(price); // 100
+
+// // 8
+// let value = 15;
+// value = value + 10;
+// // let value = 50;
+// console.log(value); // 25
+
+
+// // printing statement
+
+// // 1. console.log()
+
+// let all = 1
+
+// console.log(all);
+
+// console.log(100);
+
+
+
+// // 2. alert()
+
+// // alert("hello everyone , good morning")
+
+// // 3. confirm()
+
+// // confirm("did you know javascript")
+
+
+// // 4. prompt()
+
+// // prompt("what is your name")
+
+// // 5. document.writeln()
+
+// // document.writeln("hello")
+
+
+// // console method 
+
+// // 1. console.log()
+
+// console.log(100);
+
+
+// // 2. console.warn()
+
+// console.warn(100);
+
+
+// // 3. console.error()
+
+// console.error(100);
+
+
+// // 4. console.clear()
+
+// console.clear()
+
+
+
+// // dataTypes
+
+// // primitive data type
+
+// // 1. string - ""
+
+// let str = "123"
+
+// console.log(typeof(str));
+
+
+
+
+// // 2. number
+
+// let num = 123
+
+// console.log(typeof(num));
+
+
+// // 3. boolean
+
+// let boo = false
+
+// console.log(typeof(boo));
+
+
+// // 4. undefined
+
+// let un;
+
+// console.log(un);
+
+
+// // 5. null
+
+// // let null1 = prompt()
+
+// // console.log(null1);
+
+
+// // non primitive data type
+
+// // array
+
+// // []
+
+// let fruit = ["graphs","apple","orange","banana","cherry","pine apple"]
+
+// console.log(fruit);
+// console.log(fruit[0]);
+// console.log(fruit[3]);
+
+// // dynamically access first val
+
+// console.log(fruit[0]);
+
+// console.log(fruit[fruit.length-1]);
+
+
+// // object
+
+// // {}
+
+// let obj1 = {
+//     redFruit : ["apple","cherry"],
+//     yellowFruit : ["banana","pine apple"],
+//     smallFruit : "graphs"
+// }
+
+// console.log(obj1);
+
+// console.log(obj1.redFruit[0]);
+// console.log(obj1.yellowFruit[1]);
+// console.log(obj1.smallFruit);
+
+
+// // operators 
+
+// // 1. arithmetic operator
+
+// // meaning            operator 
+
+// // 1. addition            +
+
+// // 2. subraction          -
+
+// // 3. multiplication      *
+
+// // 4. division            / 
+
+// // 5. modulus             %
+
+// // 6. exponencial        **
+
+// // 7. increament         ++,  post = var ++ , pre = ++ var
+
+// // 8. decreament         -- , post = var --, pre = -- var.
+
+// console.log(1 + 2);
+// console.log(1 - 2);
+// console.log(1 * 2);
+// console.log(1 / 2);
+// console.log(1 % 2);
+// console.log(1 ** 2); // 1^2 = 1*1 = 1
+
+
+// // ++ = 1
+
+// let num1 = 2  // 0
+
+// num1  = ++num1 // ++num1 = 3
+
+// console.log(num1);
+
+
+// let num2 = 2     
+
+// let num3 = num2++ // 2++ = 3
+
+// console.log("num2 :",num2);
+// console.log("num3 :",num3);
+
+
+// console.clear();
+
+
+
+
+
+// // 2. assignment operator
+
+// let num4 = 2
+// let additionval = 100
+
+// // num4 = num4 + additionval  // num4 += additionVal
+
+// num4 += additionval
+
+
+// console.log(num4);
+
+// let num5 = 4
+
+
+// num5 -= additionval
+// num5 *= additionval
+// num5 /= additionval
+// num5 %= additionval
+// num5 **= additionval
+// console.log(num5);
+
+
+
+
+
+// // 3. comparision operator
+
+// // meaning          operator          example       results
+
+// // lessthen            <                5<4          false 
+
+// // greaterThen         >                5>4          true
+
+// // lessThenEqual       <=               5<=5         true
+
+// // greaterThenEq       >=               5>=4         true
+
+// // loosyTypeEq         ==               5=="5"       true
+
+// // strictlyTypeEq      ===              5==="5"      false
+
+// // loosyNotEq          !=               5!="5"       false
+
+// // strictlyNotEq       !==              5!=="5"      true
+
+
+// // example
+
+// // 1.
+// console.log(8 < 10);
+
+// // true
+
+// // 2.
+// console.log(15 >= 20);
+
+// // false
+
+// // 3.
+// console.log("25" == 25);
+
+// // true
+
+// // 4.
+// console.log("50" === 50);
+
+// // false
+
+// // 5.
+// console.log(5 != "5"); // 5=="5" = true, ! = false
+
+// //  false
+
+// // 6.
+// console.log(9 !== "9");
+
+// // true
+
+// // 7.
+// let a = 12;
+// let b = 10;
+// console.log(a > b);
+
+// // true
+
+// // 8.
+// let x = 7;
+// let y = 7;
+// console.log(x <= y);
+
+// // true
+
+
+
+
+
+
+
+
+
+// // 4. logical operator
+
+
+// AND   -- &&
+
+// true && false && true  = false
+
+// false && false && false = false
+
+// true && true && true = true
+
+
+// OR    -- ||
+
+// true || false || false = true
+
+// false || false || false = false
+
+
+// NOT    -- !
+
+// !(true) = false , !(false) = true
+
+
+// example 
+
+// 1.
+console.log(true && false);
+
+// false 
+
+// 2.
+console.log(false || true);
+
+// true
+
+// 3.
+let a = 10;
+let b = 20;
+console.log(a < b && b > 15);
+
+// true
+
+// 4.
+let x = 5;
 let y = 8;
-y = 12;
-// let y = 20;
-console.log(y); // 12
+console.log(x > 10 || y < 10);
 
-// 3
-const z = 25;
-// z = 30;
-// const z = 40;
-console.log(z); // 25
+// true
 
-// 4
-var a = 50;
-a = a + 20;
-var a = a + 10;
-console.log(a); // 80
+// 5.
+console.log(!(false && true));
 
-// 5
-let b = 100;
-b = b - 40;
-// let b = 200;
-console.log(b); // 60
+// true
 
-// 6
-const c = 10;
-// c = c + 5;
-// const c = 20;
-console.log(c); // 10
+// 6.
+let p = 12;
+let q = 12;
+console.log(p === q && !(p > q));
 
-// 7
-var price = 200;
-price = price * 2;
-var price = price / 4;
-console.log(price); // 100
+//   true && true = true
 
-// 8
-let value = 15;
-value = value + 10;
-// let value = 50;
-console.log(value); // 25
+// 7.
+console.log((5 > 2) || (3 === "3"));
 
+// true
 
-// printing statement
+// 8.
+let isLoggedIn = true;
+let hasPermission = false;
+console.log(isLoggedIn && !hasPermission);
 
-// 1. console.log()
+// true 
 
-let all = 1
+// true && !false = true = true && true = true
 
-console.log(all);
 
-console.log(100);
+// flow control statement
 
+// conditional statement
 
+// if statement
 
-// 2. alert()
+// condition true = allow
 
-// alert("hello everyone , good morning")
+// if(condition){
+//   // statement
+// }
 
-// 3. confirm()
 
-// confirm("did you know javascript")
-
-
-// 4. prompt()
-
-// prompt("what is your name")
-
-// 5. document.writeln()
-
-// document.writeln("hello")
-
-
-// console method 
-
-// 1. console.log()
-
-console.log(100);
-
-
-// 2. console.warn()
-
-console.warn(100);
-
-
-// 3. console.error()
-
-console.error(100);
-
-
-// 4. console.clear()
-
-console.clear()
-
-
-
-// dataTypes
-
-// primitive data type
-
-// 1. string - ""
-
-let str = "123"
-
-console.log(typeof(str));
-
-
-
-
-// 2. number
-
-let num = 123
-
-console.log(typeof(num));
-
-
-// 3. boolean
-
-let boo = false
-
-console.log(typeof(boo));
-
-
-// 4. undefined
-
-let un;
-
-console.log(un);
-
-
-// 5. null
-
-// let null1 = prompt()
-
-// console.log(null1);
-
-
-// non primitive data type
-
-// array
-
-// []
-
-let fruit = ["graphs","apple","orange","banana","cherry","pine apple"]
-
-console.log(fruit);
-console.log(fruit[0]);
-console.log(fruit[3]);
-
-// dynamically access first val
-
-console.log(fruit[0]);
-
-console.log(fruit[fruit.length-1]);
-
-
-// object
-
-// {}
-
-let obj1 = {
-    redFruit : ["apple","cherry"],
-    yellowFruit : ["banana","pine apple"],
-    smallFruit : "graphs"
+if(5=="5"){
+    console.log("hello");
+    
 }
 
-console.log(obj1);
 
-console.log(obj1.redFruit[0]);
-console.log(obj1.yellowFruit[1]);
-console.log(obj1.smallFruit);
+// if else statement
+
+if((5>5)){
+ console.log("true value");
+ 
+}else{
+    console.log("false value");  
+}
+
+// else if statement
+
+let hour = 100
+
+if(hour >= 1 && hour <= 6){
+   console.log("good morning");
+   
+}else if(hour >= 7 && hour <=12 ){
+    console.log("morning");
+    
+}else if(hour >= 13 && hour <= 19){
+    console.log("afternoon");
+    
+}else{
+    console.log("good night");
+    
+}
+
+// nested if statement
+
+// let age = prompt("enter your age :")
+// let height = prompt("enter your height:")
+// let weight = prompt("enter your weight:")
+
+// if(age >= 18){
+//     if(height >= 150){
+//         if(weight >= 50){
+//             alert("congratulations your selected");
+            
+//         }else{
+//             alert("your weight is not selected");
+            
+//         }
+//     }else{
+//         alert("your height is not selected");
+        
+//     }
+// }else{
+//     alert("your age is not selected");
+    
+// }
+
+// switch statement
+
+// switch(){
+//     case value : statement ; break
+//     case value : statement ; break
+//     case value : statement ; break
+// }
+
+let trafficLight = "green"
+
+switch(trafficLight){
+    case "red" : console.log("vechile stop");break
+    case "yellow" : console.log("vechile start");break
+    case "green"   : console.log("vechile go"); break   
+}
+
+// ternary operator
 
 
-// operators 
-
-// 1. arithmetic operator
-
-// meaning            operator 
-
-// 1. addition            +
-
-// 2. subraction          -
-
-// 3. multiplication      *
-
-// 4. division            / 
-
-// 5. modulus             %
-
-// 6. exponencial        **
-
-// 7. increament         ++,  post = var ++ , pre = ++ var
-
-// 8. decreament         -- , post = var --, pre = -- var.
-
-console.log(1 + 2);
-console.log(1 - 2);
-console.log(1 * 2);
-console.log(1 / 2);
-console.log(1 % 2);
-console.log(1 ** 2); // 1^2 = 1*1 = 1
+// condition ? statement : statement;
 
 
-// ++ = 1
+let pwd = false
 
-let num1 = 2  // 0
-
-num1  = ++num1 // ++num1 = 3
-
-console.log(num1);
-
-
-let num2 = 2     
-
-let num3 = num2++ // 2++ = 3
-
-console.log("num2 :",num2);
-console.log("num3 :",num3);
+pwd ? console.log("welcome home page") : console.log("your password is incorrect");
 
 
 
 
 
-// 2. assignment operator
-
-// 3. comparision operator
-
-// 4. logical operator
+// looping statement
 
 
+// // function
 
-
-
-
-// function
-
-// date
+// // date
 
 
