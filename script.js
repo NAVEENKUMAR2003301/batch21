@@ -549,13 +549,175 @@ let pwd = false
 pwd ? console.log("welcome home page") : console.log("your password is incorrect");
 
 
+console.clear();
 
 
 
 // looping statement
 
 
+// 1. for loop 
+
+// for(intialization ; condition ; iteration){
+//  statements
+//}
+
+for(let i = 1 ; i<=5 ; i++){
+    
+    if(i%2==1){
+        console.log(i); // 1 2 3 4 5
+
+    }
+    
+}
+
+// i = 1 ; 1<=5 = true ; 1++ = 2
+
+// i = 2 ; 2<=5 = true ; 2++ = 3
+
+// i = 3 ; 3<=5 = true ; 3++ = 4
+
+// i = 4 ; 4<=5 = true ; 4++ = 5
+
+// i = 5 ; 5<=5 = true ; 5++ = 6
+
+// i = 6 ; 6<=5 = false
+
+// 2. while loop
+
+console.log("while loop");
+
+
+// intialiazation
+
+// while(condition){
+//     // statement
+
+//     iteration
+// }
+
+
+let e = 4
+
+while(e>=10){ // 4>=0 = true , 3>=0 = true , 2>=0 = true , 1>=0 = true,0>=0 = true , -1>=0 =false
+
+    console.log(e); // 4 // 3 // 2 // 1 // 0
+
+    e-- // 4-- = 3, 3-- = 2 , 2-- = 1 , 1-- = 0 , 0-- = -1 
+    
+}
+
+
+
+
+// 3. do while loop
+
+// intialiazation
+
+// do{
+//     //statement  // iteration
+// }
+
+// while(condition)
+
+let h = 9
+
+do{
+    console.log(h);  h--
+    
+}
+
+while(h>=0)
+
+// 4. for of loop
+
+// string , array , function
+
+let str = "javascript"
+
+for(let h1 of str){
+    console.log(h1);
+    
+}
+
+let games = ["kabadi","cricket","volley ball"]
+
+for(let a1 of games){
+    console.log(a1);
+    
+}
+
+// 5. for in loop
+
+// object
+
+let obj = {
+    redFruit : ["apple","orange"],
+    yellowFruit : "banana",
+    bigFruit : "water melon"
+}
+
+for(let a2 in obj){
+    console.log(obj[a2]);
+    
+}
+
+
 // // function
+
+function one(a,b){
+    console.log("hello");
+    console.log(a);
+    console.log(b);
+    
+    
+    
+}
+
+one(1,"john")
+
+let employee = {
+    name1 : "bharath",
+    role : "employee"
+}
+
+function detials(){
+    console.log(employee.name1);
+    
+}
+
+detials()
+
+
+// function types
+
+// named function
+
+function named(parameter){
+    console.log("named function");
+    
+}
+
+named("argument")
+
+// annonymous function
+
+let annonymous = function(parameter){
+   console.log("annonymous function");
+   
+}
+
+annonymous("argument")
+
+// arrow function
+
+let arrow = (parameter)=>{
+   console.log("arrow function");
+   
+}
+
+arrow("argument")
+
 
 // // date
 
