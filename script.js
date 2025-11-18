@@ -565,7 +565,7 @@ console.clear();
 for(let i = 1 ; i<=5 ; i++){
     
     if(i%2==1){
-        console.log(i); // 1 2 3 4 5
+        console.log(i); 
 
     }
     
@@ -688,23 +688,24 @@ function detials(){
 
 detials()
 
+console.clear();
 
 // function types
 
 // named function
 
+named("argument")
 function named(parameter){
     console.log("named function");
     
 }
 
-named("argument")
 
 // annonymous function
 
-let annonymous = function(parameter){
-   console.log("annonymous function");
-   
+var annonymous = function(parameter){
+    console.log("annonymous function");
+    
 }
 
 annonymous("argument")
@@ -717,6 +718,187 @@ let arrow = (parameter)=>{
 }
 
 arrow("argument")
+
+
+
+// scope
+
+// var - global scope
+
+// let - block scope
+
+// const - block scope 
+
+function add(){
+   if(true){
+    var a2 = "global scope"
+    let b2 = "block scope"
+    const c2 = "block scope"
+    console.log(b2);
+    console.log(c2);
+   }
+
+   console.log(a2);
+   
+   
+   
+}
+
+add()
+
+console.log(a3);
+var a3 = 10
+
+
+let b3 = 15
+console.log(b3);
+
+const c3 = 20
+console.log(c3);
+
+console.clear();
+
+
+
+// self invoke function
+
+// (function(parameter){
+//   //statement
+// })("argument")
+
+// (function(offer){
+//     alert(`offers going on ${offer}% `)
+// })(100)
+
+// default parameter 
+
+function form(a,b,c,d="no"){
+    console.log("name : ",a);
+    console.log("department : ",b);
+    console.log("cgpa : ",c);
+    console.log("disability : ",d);
+    
+}
+
+form("bharath","ece",9.1)
+
+// higherorder and call back function
+
+function function1(){
+    console.log("higherorder function");
+    
+}
+
+function function2(){
+    console.log("callback function");
+    
+}
+
+function1(function2())
+
+// generator function
+
+function* gen(){
+    yield "try again"
+    yield "you will get 10% off"
+    yield "you will get 50% off"
+    yield "better luck next time"
+}
+
+let genVal = gen()
+
+console.log(genVal.next().value);
+console.log(genVal.next().value);
+console.log(genVal.next().value);
+console.log(genVal.next().value);
+console.log(genVal.next());
+
+console.clear();
+
+
+// es6 edition
+
+// spread operator
+
+// array , object
+
+// [...] , {...}
+
+let arr1 = [1,2,3,4]
+let arr2 = [5,6,7,8]
+
+let finalArr = [...arr1,...arr2]
+
+console.log(finalArr);
+
+let obj1 = {
+    name11 : "john",
+    role1 : "trainee"
+}
+
+let obj2 = {
+    name1 : "john paul",
+    role : "developer"
+}
+
+let finalObj = {...obj1,...obj2}
+
+console.log(finalObj);
+
+
+// you want to merge to arr or obj you will spread operator
+
+// rest operator
+
+// function
+
+// (...)
+
+// you want to store multiple argument in single parameter
+
+function random(a,b,...c){
+ console.log(a+b);
+ console.log(c);
+ 
+ 
+}
+
+random(1,2,3,4,5,6,7,8,9)
+
+// destracture
+
+let arr3 = [1,2,3,4]
+
+let val1 = arr3[0]
+let val2 = arr3[1]
+
+console.log(val1+val2);
+
+
+let [d1,d2,d3,d4] = arr3
+
+console.log(d1);
+
+let obj3 ={
+    name1 : "sri",
+    role : "developer"
+}
+
+let {name1} = obj3
+
+console.log(name1);
+
+
+
+let nested = [1,2,3,[4,5,6,[7]]]
+
+console.log(nested[3][3][0]);
+
+
+
+
+
+
 
 
 // // date
