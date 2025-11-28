@@ -1034,12 +1034,155 @@ four.fill("four",2,4)// "value",si,ei
 
 console.log(four);
 
+console.clear();
 
 
 
 // 7. indexOf()
 
+let six = [1,2,3,5,6,2,1] 
+
+let indexOfVal = six.indexOf(2,2)// value,FromIndex
+
+console.log(indexOfVal);
+
+
 // 8. lastIndexOf()
+
+let seven = [1,2,3,4,5,4,2,3,2,1]
+
+let lastIndexOfVal = seven.lastIndexOf(1,8)// value,fromIndex
+
+console.log(lastIndexOfVal);
+
+
+// array higher order method
+
+let game = ["gta","sub","ff","pubg","cod"]
+
+// 1. forEach()
+
+
+
+let forEachVal = game.forEach((c,i,t)=>{
+  return(c);
+  
+  
+})
+
+console.log(forEachVal);
+
+
+// 2. map()
+
+let mapVal = game.map((c,i,t)=>{
+
+  return(c);
+})
+
+console.log(mapVal);
+
+
+
+// 3. filter()
+
+let employee = [
+  {ename : "a",eSalary : 100000},
+  {ename : "b",eSalary : 200000},
+  {ename : "c",eSalary : 300000},
+  {ename : "d",eSalary : 400000},
+  {ename : "e",eSalary : 500000},
+]
+
+let filterVal = employee.filter((c,i,t)=>{
+  return c.eSalary>200000
+})
+
+console.log(filterVal);
+
+
+// 4. find()
+
+let findVal = employee.find((c,i,t)=>{
+ return c.eSalary>200000
+})
+
+console.log(findVal);
+
+
+
+// 5. reduce()
+
+employee = [
+  { ename: "a", eSalary: 100000 },
+  { ename: "b", eSalary: 200000 },
+  { ename: "c", eSalary: 300000 },
+  { ename: "d", eSalary: 400000 },
+  { ename: "e", eSalary: 500000 },
+];
+
+
+let reduceVal = employee.reduce((acc,c,i,t)=>{
+ return acc+c.eSalary
+
+ //  0 + 1 = 1
+ //  1 + 2 = 3
+ //  3 + 3 = 6
+ //  6 + 4 = 10
+ //  10 + 5 = 15
+
+//  return acc + c.salary = 15 + 0  = 15
+
+},0) // 1 // 3 // 6 // 10 // 15
+
+console.log(reduceVal);
+
+
+// array higherorder function method
+
+// 1.sort()
+
+let sortArr = [1,33,55,5,2,3000,7,8]
+
+let sortVal1 = sortArr.sort((a,b)=>{
+ return b-a
+})
+
+console.log(sortVal1);
+
+
+
+// 2.some() - logical Or
+
+let some1 = [1,2,3,4,5]
+
+let someVal = some1.some((c,i,t)=>{
+ return c%2==1
+
+ // 1%2==1 = true
+ // 2%2==1 = false
+ // 3%2==1 = true
+ // 4%2==1 = false
+ // 5%2==1 = true
+
+//  true || false || true || false || true = true 
+})
+
+console.log(someVal);
+
+
+
+// 3.every() - logical And
+
+let every1 = [2,2,2,2]
+
+let everyVal = every1.every((c,i,t)=>{
+return i%2==0
+})
+
+console.log(everyVal);
+
+
 
 
 
