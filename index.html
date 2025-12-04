@@ -6,17 +6,43 @@
 <title>Header</title>
 
 </head>
+<style>
+   .open{
+    animation: right 1s ease;
+    cursor: pointer;
+    font-size: 30px;
+    border: 3px solid black;
+   }
+   .open:hover{
+    background-color: red;
+   }
+
+   @keyframes right{
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+   }
+</style>
 <body>
 
+    <h1>To do application</h1>
 
-    <h1>hello</h1>
-    <div class="one">hello1</div>
-    <div id="two">hello2</div>
+    <input type="text">
 
-    <h5>one</h5>
-    <h5>two</h5>
-    <h5>three</h5>
-    <h5>four</h5>
+    <button>add task</button>
+
+    <ol>   
+    </ol>
+
+
+    <div class="parent">
+        <div class="child1">hi</div>
+        <div class="child2">hello</div>
+        <div class="child3">welcome</div>
+    </div>
 
 
 

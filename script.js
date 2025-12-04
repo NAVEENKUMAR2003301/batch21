@@ -1572,61 +1572,241 @@
 
 // console.log("hello");
 
+// // promise 
 
+// fetch("https://fakestoreapi.com/products/1")
 
+// .then((data)=>{
+    
+//     // JSON( ) --> json data converted to js data
+//     return data.json()
+// })
 
-// Dom - Document object model
+// .then((jd)=>{
 
-// selecting
+//     console.log(jd);
+    
 
-// getElementByTagname
+// })
 
-// let tag = document.getElementsByTagName("h1")
-
-// console.log(tag);
-
-// // getElementByClassname
-
-// let class1 = document.getElementsByClassName("one")
-
-// console.log(class1);
-
-// // getElementById
-
-// let id1 = document.getElementById("two")
-
-// console.log(id1);
-
-// querySelector
-
-let tag = document.querySelector("h1")
-
-console.log(tag);
-
-let class1 = document.querySelector(".one")
-
-console.log(class1);
-
-let id1 = document.querySelector("#two")
-
-console.log(id1);
+// .catch((error1)=>{
+//     console.log(error1.message);
+    
+// })
 
 
 
 
-// querySelectorAll
+// // Dom - Document object model
 
-let h5All = document.querySelectorAll("h5")
+// // selecting
 
-console.log(h5All);
+// // getElementByTagname
+
+// // let tag = document.getElementsByTagName("h1")
+
+// // console.log(tag);
+
+// // // getElementByClassname
+
+// // let class1 = document.getElementsByClassName("one")
+
+// // console.log(class1);
+
+// // // getElementById
+
+// // // let id1 = document.getElementById("two")
+
+// // // console.log(id1);
+
+// // // querySelector
+
+// // let tag = document.querySelector("h1")
+
+// // console.log(tag);
+
+// // let class1 = document.querySelector(".one")
+
+// // console.log(class1);
+
+// // let id1 = document.querySelector("#two")
+
+// // console.log(id1);
 
 
 
 
+// // // querySelectorAll
 
-// traversing
+// // let h5All = document.querySelectorAll("h5")
 
-// manipulating
+// // console.log(h5All);
+
+
+
+
+// // traversing
+
+// // parent element
+
+// let child1 = document.querySelector(".child1")
+
+// console.log(child1);
+// console.log(child1.parentElement); // parentElement
+
+
+// // child element
+
+// let parent = document.querySelector(".parent")
+
+// console.log(parent);
+// console.log(parent.children);// children
+// console.log(parent.firstElementChild);// firstElementChild
+// console.log(parent.lastElementChild);// lastElementChild
+
+
+// // sibling element
+
+// console.log(child1);
+// let child2 = (child1.nextElementSibling);// nextElementSibiling
+// console.log(child2.previousElementSibling); // previousElementSibiling
+
+
+// // manipulating
+
+
+// // input tag inside value if u want manipulate , (value)
+
+// // other tag inside value if u want manipulate, (1. innerText, 2.innerHtml, 3.TextContent)
+
+// let input  = document.querySelector("input")
+
+// input.value = "hello"
+
+
+// let h1 = document.querySelector("h1")
+
+
+
+// // event handler
+
+// // function one1(){
+// //     h1.innerText = "hi" 
+
+// // }
+
+
+
+
+// // event listner
+
+// let button = document.querySelector("button")
+
+// button.addEventListener("click",()=>{
+//     h1.innerText = "hi"; 
+// })
+
+// // create tag
+
+// let li = document.createElement("li")
+
+// li.innerText = "hellojhghgh"
+
+// let ol = document.querySelector("ol")
+
+// // append
+
+// ol.append(li)
+
+// // add css
+
+
+// let h3 = document.querySelector("h3")
+
+// h3.innerText =  "welcome"
+
+// h3.style.backgroundColor = "green"
+// h3.style.border = "20px solid violet"
+
+
+// // add attributes
+
+// // setAttributes
+
+// let h4 = document.querySelector("h4")
+
+// h4.innerText = "hello"
+
+// h4.setAttribute("class","active")
+
+// // remove
+
+// // remove()
+
+// // eval()
+
+// console.log(eval(10*10+5-78));
+
+
+
+// To do Application
+
+
+let input = document.querySelector("input")
+let button = document.querySelector("button")
+let ol = document.querySelector("ol")
+
+button.addEventListener("click",()=>{
+    let inputVal = input.value
+
+    let li  = document.createElement("li")
+    li.setAttribute("class","open")
+
+    li.innerText = inputVal
+
+    ol.append(li)
+
+    li.addEventListener("click",()=>{
+        li.remove()
+    })
+
+   
+    
+})
+
+
+
+// traversing 
+
+// parent select 
+
+
+// child select 
+
+let parent = document.querySelector(".parent")
+
+console.log(parent);
+console.log(parent.children);// children
+console.log(parent.firstElementChild);// firstElementChild
+console.log(parent.lastElementChild);// lastElementChild
+
+
+
+
+// sibling select
+
+// nextElementSibling
+// PreviousElementSibling
+
+let child1 = document.querySelector(".child1")
+
+console.log(child1.nextElementSibling);
+
+let child2 = document.querySelector(".child2")
+
+console.log(child2.previousElementSibling);
+
+
 
 
 
